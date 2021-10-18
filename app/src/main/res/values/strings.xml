@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SpaceX-API</string>
+    <string name="title_space_missions">Space Missions</string>
+    <string name="title_fragment_launch">Launch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    
+    <string name="spinner_item_old">Old first</string>
+    <string name="spinner_item_new">New first</string>
+
+    <string name="toast_network_error">Network error</string>
+</resources>

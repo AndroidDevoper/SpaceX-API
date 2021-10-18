@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toEndOf="@+id/fragment_launch_img"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_launch_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_launch_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_launch_tv_details_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_launch_tv_details_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/fragment_launch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fragment_launch_tv_name_size"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_launch_img"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView"
+        app:layout_constraintStart_toStartOf="@+id/scrollView"
+        app:layout_constraintTop_toTopOf="@+id/fragment_launch_img"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/fragment_launch_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_launch_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toEndOf="@+id/fragment_launch_img"
+        app:layout_constraintTop_toTopOf="@+id/fragment_launch_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fragment_launch_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_space_missions">
+
+    <fragment
+        android:id="@+id/navigation_space_missions"
+        android:name="com.example.spacex_api.ui.space_missions.SpaceMissionsFragment"
+        android:label="@string/title_space_missions"
+        tools:layout="@layout/fragment_space_missions" >
+        <action
+            android:id="@+id/action_navigation_space_missions_to_launchFragment"
+            app:destination="@id/launchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/launchFragment"
+        android:name="com.example.spacex_api.ui.LaunchFragment"
+        android:label="@string/title_fragment_launch"
+        tools:layout="@layout/fragment_launch" >
+        <argument
+            android:name="Launch"
+            app:argType="com.example.spacex_api.ui.ItemLaunch" />
+    </fragment>
+
+</navigation>
